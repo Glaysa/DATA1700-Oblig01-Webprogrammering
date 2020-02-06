@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Kjøp Kinobillett</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header"><h2>Bestilling av Kinobilletter</h2></div>
+        <div class="input-field-wrapper">
+            <form>
+                <label for="film-selection">Velg Film:</label>
+                <select id="film-selection">
+                    <option value="SpiderMan">SpiderMan</option>
+                    <option value="Batman">Batman</option>
+                    <option value="Titanic">Titanic</option>
+                </select><br>
+
+                <label for="film-quantity">Antall:</label>
+                <input type="text" autocomplete="off" id="film-quantity">
+                <p id="err-quantity" class="err"></p><br>
+
+                <label for="user-first">Fornavn:</label>
+                <input type="text" autocomplete="off" id="user-first">
+                <p id="err-first" class="err"></p><br>
+
+
+                <label for="user-last">Etternavn:</label>
+                <input type="text" autocomplete="off" id="user-last">
+                <p id="err-last" class="err"></p><br>
+
+
+                <label for="user-tlf">Tlf:</label>
+                <input type="text" autocomplete="off" id="user-tlf">
+                <p id="err-tlf" class="err"></p><br>
+
+
+                <label for="user-email">Email:</label>
+                <input type="email" autocomplete="off" id="user-email">
+                <p id="err-email" class="err"></p><br>
+
+
+                <input type="button" id="buyButton" value="Kjøp Billett"><br>
+                
+                <h3>Alle Billetter:</h3>
+                <div class="display-list">
+                    <p id="list"></p>
+                </div>
+                <input type="button" id="delButton" value="Slett Billetter">
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-width: 700px;
+    background: white;
+}
+
+.main-container {
+    width: 700px;
+    min-width: 700px;
+    margin: 100px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 4px 4px 16px 4px whitesmoke;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    min-width: 100px;
+    padding: 10px 0 10px 0;
+}
+
+input, option {
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    color: black;
+    outline: none;
+    background: whitesmoke;
+    margin-bottom: 10px;
+}
+
+p.err {
+    display: inline;
+    padding: 0 20px;
+    color: salmon;
+}
+
+input[type="button"]{
+    margin: 20px 0 20px 0;
+    width: 325px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+#buyButton {
+    background: #00ad42;
+}
+
+#buyButton:hover {
+    background: #17c900;
+    cursor: pointer;
+}
+
+#delButton {
+    background: #b10000;
+
+}
+
+#delButton:hover {
+    background: rgb(216, 33, 33);
+
+    cursor: pointer;
+}
+
+#film-selection {
+    padding: 10px ;
+    width: 215px;
+    outline: none;
+    border: 1px solid whitesmoke;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#list {
+    line-height: 1.5em;
+    color: grey;
+}
