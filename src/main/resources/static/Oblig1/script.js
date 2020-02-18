@@ -42,6 +42,7 @@ btnBuy.onclick = function(){
     if(!email){errEmail.innerHTML = "Ugyldig Epost";} else {errEmail.innerHTML = ""; }
 
     if(valid){
+        let list = "";
         let person = {
             qty: qty,
             tlf: tlf,
@@ -52,8 +53,7 @@ btnBuy.onclick = function(){
         };
         customers.push(person);
         form.reset();
-        let list = "";
-        
+
         for(let i = 0; i < customers.length; i++){
             list += 
                 customers[i].fname + " " +
